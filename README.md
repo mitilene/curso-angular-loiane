@@ -1,5 +1,5 @@
 # curso-angular-loiane
-Estudando angular através do curso de Loiane Groner
+Estudando fundamentos do angular através do curso de [Loiane Groner](https://github.com/loiane)
 
 Projeto gerado usando [Angular CLI](https://github.com/angular/angular-cli) versão 12.2.8 e [Node](https://github.com/nodejs/node) versão 14.15.0
 
