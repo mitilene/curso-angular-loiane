@@ -4,7 +4,7 @@ Estudando fundamentos do angular através do curso de [Loiane Groner](https://gi
 Projeto gerado usando [Angular CLI](https://github.com/angular/angular-cli) versão 12.2.8 e [Node](https://github.com/nodejs/node) versão 14.15.0
 
 ## Módulos Estudados
-### Introdução
+### Introdução (Projeto hello-typescript e primeiro-projeto)
 - Introdução ao Angular; ✅
 - Ambiente de desenvolvimento (Node.JS, TypeScript e Angular CLI); ✅
 - Hello World! Criando o primeiro projeto e o primeiro Component; ✅
@@ -14,7 +14,7 @@ Projeto gerado usando [Angular CLI](https://github.com/angular/angular-cli) vers
 - Serviços (Services) e Injeção de Depêndencia (DI); ✅
 
 
-### Data Binding
+### Data Binding (Projeto data-binding)
 - Property Binding e Interpolação;
 - Class e Style Binding;
 - Event Binding;
