@@ -1,0 +1,63 @@
+<section class="property-binding">
+  <article>
+    <h3>Interpolation / Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>
+      Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}
+    </p>
+  </article>
+  <br />
+  <br />
+
+  <article>
+    <h3>Property Binding</h3>
+    <!-- Esse é um exemplo de interpolação -->
+    <img src="{{ urlImage }}" alt="{{ urlImage }}" />
+    <br />
+
+    <!-- Esse é um exemplo de property binding. É usado [], que é uma forma simplificada de escrever -->
+    <img [src]="urlImage" [alt]="urlImage" />
+    <br />
+
+    <!-- Quando usado o property binding o angular ler o código da seguinte forma -->
+    <img bind-src="urlImage" bind-alt="urlImage" />
+  </article>
+  <br />
+  <br />
+
+  <article>
+    <h3>Class e Style Binding</h3>
+    <p>Ao invés de trabalhar com variáveis ou expressões do componente, esse tópico trabalha com CSS.</p>
+    <br />
+
+    <!-- Exemplo usando property binding de class. -->
+    <div>
+      <label>Selecione uma classe:</label>
+      <select #classe (change)="(0)">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br />
+      <br />
+
+      <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">Sucesso</div>
+      <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
+      <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Alerta</div>
+      <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Erro</div>
+
+      <!-- Exemplo usando interpolação. -->
+      <div class="alert {{classe.value}}" role="alert">
+        <p>O texto vai ser colorido de acordo com o select. Exemplo usando interpolação</p>
+      </div>
+
+      <!-- Exemplo usando property binding com estilo de class. -->
+      <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+        <p>Div com texto de erro. Exemplo usando property binding com estilo de class.</p>
+      </div>
+    </div>
+  </article>
+</section>
