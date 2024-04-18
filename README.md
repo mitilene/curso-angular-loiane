@@ -15,9 +15,9 @@ Projeto gerado usando [Angular CLI](https://github.com/angular/angular-cli) vers
 
 
 ### Data Binding (Projeto data-binding)
-- Property Binding e Interpolação;
-- Class e Style Binding;
-- Event Binding;
+- Property Binding e Interpolação; ✅
+- Class e Style Binding; ✅
+- Event Binding; ✅
 - Two-way Data Binding;
 - Input properties;
 - Output properties;
