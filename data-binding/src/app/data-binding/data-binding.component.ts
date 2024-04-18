@@ -9,6 +9,9 @@ export class DataBindingComponent implements OnInit {
   url: string = "http://loiane.com";
   cursoAngular: boolean = true;
   urlImage: string = "http://lorempixel.com.br/400/200/nature";
+  valorDigitado: string = "";
+  valorSalvo: string = "";
+  isMouseOver: boolean = false;
 
   constructor() { }
 
@@ -21,6 +24,24 @@ export class DataBindingComponent implements OnInit {
 
   getCurtirCurso() {
     return true;
+  }
+
+  botaoClicado() {
+    alert("Botão clicado");
+  }
+
+  onKeyUp(event: KeyboardEvent) {
+    console.log((<HTMLInputElement>event.target).value);
+    this.valorDigitado = (<HTMLInputElement>event.target).value;
+  }
+
+  onKeyUpEnter(event: string) {
+    console.log(event, "aqui")
+    this.valorSalvo = event;
+  }
+
+  onMouseOver() {
+    this.isMouseOver = !this.isMouseOver;
   }
 
 }
